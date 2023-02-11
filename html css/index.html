@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- font flickity cdn link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.css" />
+
+    <!-- responsive css file link -->
+    <link rel="stylesheet" href="./responsive.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="navbar">
+      <h1>NINJA KEN</h1>
+      <ul class="menu">
+        <a href="#"><li>Tentang Saya</li></a>
+        <a href="#"><li>Contoh Proyek</li></a>
+        <a href="#"><li>Hubungi Saya</li></a>
+      </ul>
+      <span class="fa fa-bars menu-icon">
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="32"
+          height="32"
+          viewBox="0,0,256,256"
+          style="fill: #000000">
+          <g
+            fill="#ffffff"
+            fill-rule="nonzero"
+            stroke="none"
+            stroke-width="1"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            stroke-dasharray=""
+            stroke-dashoffset="0"
+            font-family="none"
+            font-weight="none"
+            font-size="none"
+            text-anchor="none"
+            style="mix-blend-mode: normal">
+            <g transform="scale(8,8)">
+              <path d="M4,7v2h24v-2zM4,15v2h24v-2zM4,23v2h24v-2z"></path>
+            </g>
+          </g>
+        </svg> -->
+      </span>
+    </div>
+
+    <!-- INTRODUCING -->
+    <div class="intro">
+      <div class="container">
+        <h1 class="title">NINJA KEN<span class="dot">.</span></h1>
+        <!-- <span class="dot">•</span> -->
+        <h2 class="title-desc">MY PORTFOLIO</h2>
+        <img src="./assets/Ninja Ken.png" alt="Ninja Ken" />
+      </div>
+    </div>
+
+    <!-- TENTANG SAYA -->
+    <div class="tentang-saya">
+      <div class="container">
+        <h3>Tentang Saya</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          quae accusantium soluta corporis quos. Deleniti obcaecati totam
+          impedit dolor quos nihil necessitatibus ad facilis, molestias ducimus
+          nobis, sint reprehenderit? Praesentium, voluptate non. Earum accusamus
+          dolorem repudiandae? Magni, quod non temporibus eaque, quia autem quas
+          quae mollitia repellat placeat incidunt, nihil illum! Amet obcaecati
+          quia, debitis saepe suscipit neque officia fugiat illo dignissimos qui
+          tenetur repudiandae vel consequuntur iusto ipsam impedit, delectus
+          alias atque quibusdam facere id dolore doloribus. Iusto enim alias,
+          officia illo similique, repudiandae reprehenderit, sint quisquam ab
+          pariatur deserunt. Excepturi reiciendis dolorem modi at culpa qui
+          autem a.
+        </p>
+      </div>
+    </div>
+
+    <!-- CONTOH PROYEK -->
+    <div class="proyek">
+        <div class="container">
+          <h3>Proyek Contoh</h3>
+          <div class="products-container">
+            <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+            <div class="halaman">
+              <div class="product" data-name="p-1">
+                <img src="assets/1 (1).png" alt="proyek 1" />
+                <p>PROJECT 1</p>
+              </div>
+              <div class="product" data-name="p-2">
+                <img src="assets/2.png" alt="proyek 2" />
+                <p>PROJECT 2</p>
+              </div>
+              <div class="product" data-name="p-3">
+                <img src="assets/3.png" alt="proyek 1" />
+                <p>PROJECT 3</p>
+              </div>
+            </div>
+             
+            <div class="halaman">
+              <div class="product" data-name="p-4">
+                <img src="assets/2.png" alt="proyek 3" />
+                <p>PROJECT 4</p>
+              </div>
+              <div class="product" data-name="p-5">
+                <img src="assets/3.png" alt="proyek 1" />
+                <p>PROJECT 5</p>
+              </div>
+                            <div class="product" data-name="p-6">
+                <img src="assets/1 (1).png" alt="proyek 6" />
+                <p>PROJECT 6</p>
+              </div>
+            </div>
+
+            <!-- <div class="halaman">
+              <div class="product" data-name="p-3">
+                <img src="assets/1 (1).png" alt="proyek 3" />
+              </div>
+              <div class="product" data-name="p-4">
+                <img src="assets/3.png" alt="proyek 1" />
+              </div>
+            </div> -->
+
+              <a class="next" onClick="nextslide(1)">&#10095;</a> 
+            </div>
+              <!-- <div class="product" data-name="p-5">
+                <img src="assets/1 (1).png" alt="proyek 2" />
+              </div>
+              <div class="product" data-name="p-6">
+                <img src="assets/2.png" alt="proyek 3" />
+              </div> -->
+            </div>
+         
+            <div class="page">
+              <span class="dot active" onClick="dotslide(1)"></span>
+              <span class="dot " onClick="dotslide(2)"></span>
+              <!-- <span class="dot " onClick="dotslide(3)"></span> -->
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREVIEW PROYEK -->
+    <div class="products-preview" style="display: none">
+      <div class="preview" data-target="p-1">
+        <i class="fas fa-times"></i>
+        <h3 class="project-title">Project 1</h3>
+        <img src="assets/1 (1).png" alt="proyek 1" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          illum tenetur voluptatum incidunt repellat doloribus sapiente
+          aspernatur libero! Eos quaerat quasi fugit fugiat, quae et itaque
+          beatae enim cum quas.
+        </p>
+      </div>
+      <div class="preview" data-target="p-2">
+        <i class="fas fa-times"></i>
+        <h3 class="project-title">Project 2</h3>
+        <img src="assets/2.png" alt="proyek 2" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          illum tenetur voluptatum incidunt repellat doloribus sapiente
+          aspernatur libero! Eos quaerat quasi fugit fugiat, quae et itaque
+          beatae enim cum quas.
+        </p>
+      </div>
+      <div class="preview" data-target="p-3">
+        <i class="fas fa-times"></i>
+        <h3 class="project-title">Project 3</h3>
+        <img src="assets/3.png" alt="proyek 3" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          illum tenetur voluptatum incidunt repellat doloribus sapiente
+          aspernatur libero! Eos quaerat quasi fugit fugiat, quae et itaque
+          beatae enim cum quas.
+        </p>
+      </div>
+      <div class="preview" data-target="p-4">
+        <i class="fas fa-times"></i>
+        <h3 class="project-title">Project 4</h3>
+        <img src="assets/2.png" alt="proyek 4" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          illum tenetur voluptatum incidunt repellat doloribus sapiente
+          aspernatur libero! Eos quaerat quasi fugit fugiat, quae et itaque
+          beatae enim cum quas.
+        </p>
+      </div>
+      <div class="preview" data-target="p-5">
+        <i class="fas fa-times"></i>
+        <h3 class="project-title">Project 5</h3>
+        <img src="assets/3.png" alt="proyek 5" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          illum tenetur voluptatum incidunt repellat doloribus sapiente
+          aspernatur libero! Eos quaerat quasi fugit fugiat, quae et itaque
+          beatae enim cum quas.
+        </p>
+      </div>
+      <div class="preview" data-target="p-6">
+        <i class="fas fa-times"></i>
+        <h3 class="project-title">Project 6</h3>
+        <img src="assets/1 (1).png" alt="proyek 6" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          illum tenetur voluptatum incidunt repellat doloribus sapiente
+          aspernatur libero! Eos quaerat quasi fugit fugiat, quae et itaque
+          beatae enim cum quas.
+        </p>
+      </div>
+    </div>
+
+    <!-- HUBUNGI SAYA -->
+    <div class="hubungi-saya">
+      <div class="container">
+        <h3>Hubungi Saya</h3>
+        <form>
+          <input
+            type="text"
+            class="email"
+            placeholder="Email (Diperlukan)"
+            required />
+          <input
+            type="text"
+            class="message"
+            placeholder="Message (Diperlukan)"
+            required />
+          <input type="submit" class="kirim" value="Kirim" />
+        </form>
+      </div>
+    </div>
+    
+    <!-- FAQ -->
+    <div class="faq">
+
+      <div class="container">
+        <div class="accordion">
+          <h3>FAQ</h3>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What is Web Development?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Web Development broadly refers to the tasks associated with developing functional websites and applications for the Internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What is HTML?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What are some basic technical skills of a Front-End developer?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul style="padding-left: 1rem;">
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>Frameworks (CSS and JavaScript frameworks)</li>
+                  <li>Responsive Design</li>
+                  <li>Version Control/Git</li>
+                  <li>Testing/Debugging</li>
+                  <li>Browser Developer Tools</li>
+                  <li>Web Performance</li>
+                  <li>SEO (Search Engine Optimization)</li>
+                  <!-- <li>CSS Preprocessing</li> -->
+                  <li>Command Line</li>
+                  <li>CMS (Content Management System)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What is HTTP?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What is CORS?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <h1>NINJA KEN</h1>
+        <div class="list">
+          <ul>
+            <a href="#"><li>Tentang Saya</li></a>
+            <a href="#"><li>Contoh Proyek</li></a>
+            <a href="#"><li>Hubungi Saya</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- custom js file link -->
+    <script src="js.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+  </body>
+</html>

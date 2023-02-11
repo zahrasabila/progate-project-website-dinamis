@@ -1,0 +1,183 @@
+@media (max-width: 1000px) {
+  .intro img {
+    width: 30%;
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 670px) {
+  h3 {
+    padding-bottom: 30px;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  /* BAGIAN NAVBAR */
+  .menu-icon {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .fa-bars:before {
+    content: "\f0c9";
+    display: block;
+  }
+
+  /* BAGIAN INTRO */
+  .intro img {
+    width: 33%;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .title {
+    font-size: 3em;
+  }
+
+  .title-desc {
+    padding: 1rem 50px;
+    font-size: 1em;
+  }
+
+  /* BAGIAN TENTANG SAYA */
+  .tentang-saya .container,
+  .hubungi-saya .container {
+    text-align: center;
+    padding: 50px;
+  }
+
+  /* BAGIAN PROYEK */
+  .proyek .container {
+    padding: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .proyek img {
+    width: 100%;
+  }
+
+  /* BAGIAN HUBUNGI SAYA */
+  form {
+    padding: 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin: 30px 0;
+    margin-top: 0;
+  }
+
+  input[type="submit"] {
+    width: 35%;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .email {
+    padding: 15px 0 15px 15px;
+  }
+
+  .message {
+    padding: 15px 0 50px 15px;
+  }
+
+  .kirim {
+    font-size: medium;
+  }
+
+  /* CAROUSEL */
+  .products-container {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .halaman {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container .products-container .product {
+    text-align: center;
+    width: 9rem;
+    height: 11rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: auto; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .products-container img {
+    /* width: 14rem; */
+    margin: 0rem;
+    padding: 0.5rem;
+  }
+
+  /* ACCORDION */
+  .accordion {
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 1024px) {
+  .container .products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 24%;
+    margin: auto;
+  }
+
+  .products-container img {
+    width: 100%;
+    padding: 1rem;
+    margin: 0rem;
+  }
+
+  .container .products-container .product {
+    text-align: center;
+    width: 11rem;
+    height: 13rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    margin: 30px auto;
+    margin-top: 0;
+  }
+
+  .accordion-item {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}
