@@ -1,0 +1,406 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a :hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  font-weight: 800;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: large;
+}
+
+/* BAGIAN NAVBAR */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /*Gantikan property display ke none */
+  display: none;
+}
+
+.navbar {
+  background-color: rgb(50, 50, 50);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.navbar h1 {
+  margin: auto 0 auto 10px;
+}
+
+.dot {
+  color: rgb(255, 179, 80);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  font-weight: lighter;
+  margin: auto 0 auto 40px;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+  display: none;
+}
+
+/* BAGIAN INTRO */
+.title {
+  color: rgb(50, 50, 50);
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 50px 50px 0 50px;
+  font-size: 4em;
+  font-weight: 800;
+}
+
+/* .dot {
+  color: orange;
+  font-size: larges;
+} */
+
+.title-desc {
+  font-weight: 100;
+  text-align: center;
+  padding: 10px;
+}
+
+.intro img {
+  display: block;
+  text-align: center;
+  width: 13%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+/* BAGIAN TENTANG SAYA */
+.tentang-saya .container,
+.hubungi-saya .container {
+  background-color: rgb(226, 226, 226);
+  padding: 100px;
+  text-align: center;
+}
+
+/* BAGIAN PROYEK CONTOH */
+.proyek .container {
+  padding: 100px;
+  text-align: center;
+}
+
+.container .products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* .proyek img {
+  margin: 0;
+  padding-bottom: 0;
+  width: 25%;
+  cursor: pointer;
+} */
+
+.container .products-container .product {
+  text-align: center;
+  width: 16rem;
+  height: 19rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.container .products-container .product:hover {
+  outline: 0.2rem solid #222;
+  outline-offset: 0;
+}
+
+.container .products-container .product:hover img {
+  transform: scale(0.9);
+}
+
+.products-container img {
+  width: 14rem;
+  margin: 1rem;
+}
+/* PROJECTS PREVIEW */
+.products-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 20rem;
+}
+
+.fa-times:before {
+  content: "\f00d";
+  font-size: 1.3rem !important;
+  display: inherit !important;
+  position: absolute;
+  top: -0.8rem;
+  right: -1.3rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.products-preview .preview.active {
+  display: inline-block;
+}
+
+.products-preview .preview img {
+  height: 16rem;
+  margin-top: 0.3rem;
+}
+
+.products-preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 4rem;
+}
+
+.products-preview .fa-times:hover {
+  color: red;
+}
+
+.products-preview .preview p {
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+.project-title {
+  padding-bottom: 9px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* SLIDER CAROUSEL */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin: auto;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(115, 115, 115);
+}
+.content-slide .numberslide {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* .page {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: -5rem;
+  margin-bottom: 35px;
+}
+
+.page .dot.active,
+.page .dot:hover {
+  background-color: #ce0000;
+} */
+
+.page .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: none;
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+}
+
+/* BAGIAN HUBUNGI SAYA */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+input {
+  border-width: 0;
+  outline: none;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  width: 70%;
+  margin: 30px auto;
+  margin-top: 0;
+}
+
+input[type="submit"] {
+  width: 35%;
+  padding: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.email {
+  padding: 20px 0 20px 20px;
+}
+
+.message {
+  padding: 20px 0 45px 20px;
+}
+
+.kirim {
+  background-color: rgb(248, 234, 131);
+  font-size: large;
+}
+
+/* BAGIAN FOOTER */
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(114, 114, 114);
+  color: #fff;
+}
+
+.footer h1 {
+  margin: 20px;
+}
+
+.list {
+  text-align: center;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.footer li {
+  padding: 10px;
+}
+
+/* FAQ */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.faq .container {
+  padding: 100px;
+  text-align: center;
+}
+
+.accordion {
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+  /* padding: 100px; */
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
